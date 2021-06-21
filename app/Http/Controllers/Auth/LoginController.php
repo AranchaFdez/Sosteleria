@@ -1,0 +1,87 @@
+<?php
+
+namespace App\Http\Controllers\Auth;
+
+use App\Http\Controllers\Controller;
+use App\Providers\RouteServiceProvider;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Models\Users;
+
+class LoginController extends Controller
+{
+    /*
+    |--------------------------------------------------------------------------
+    | Login Controller
+    |--------------------------------------------------------------------------
+    |
+    | This controller handles authenticating users for the application and
+    | redirecting them to your home screen. The controller uses a trait
+    | to conveniently provide its functionality to your applications.
+    |
+    */
+
+    use AuthenticatesUsers;
+   
+
+    /**
+     * Where to redirect users after login.
+     *
+     * @var string
+     */
+    protected $redirectTo = RouteServiceProvider::HOME;
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('guest')->except('logout');
+    }
+    public function redirectTo()
+    {
+        $for = [
+            'admin' => 'admin.index',
+            'user'  => 'client.index',
+        ];
+        return $this->redirectTo = route($for[auth()->user()->role]);
+    }
+
+    protected function logout(Request $request){
+        $mail=auth()->user()->email;
+        
+        $admin=DB::table('users')
+        ->select("role")
+        ->where('email','LIKE',$mail)
+        ->get();
+        $admin=$admin[0]->role;
+
+        $borrar=DB::table('local')
+        ->select("nif")
+        ->where('mail','LIKE',$mail)
+        ->get();
+
+        if($admin!='admin'){
+            if(count($borrar)==0){
+                $id=DB::table('users')
+                ->select("id")
+                ->where('email','LIKE',$mail)
+                ->get();
+                $id=$id[0]->id;
+                Users::destroy($id);
+            }  
+        }
+
+        $this->guard()->logout();
+        
+        $request->session()->flush();
+        
+        $request->session()->regenerate();
+
+        return redirect('/login');
+    }
+    
+}

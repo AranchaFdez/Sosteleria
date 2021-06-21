@@ -1,0 +1,61 @@
+footer{
+    width: 100%;
+    left: 0;
+    height: 300px;
+    
+}
+.footer{
+
+    width:100%;
+    position: relative;
+}
+.pie{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+ 
+}
+.redesociales > p {
+    text-decoration: underline;
+}
+
+.redesociales >svg{
+    margin-left: 1%;
+    border: #FFFFFF solid 2px;
+    border-radius: 50%;
+}
+.redesociales >svg:hover{
+    transform: scale(1.3);
+    transition: transform 0.25s linear;
+    opacity: 0.8;
+    filter: grayscale(0.3);
+
+
+}
+.redesociales{
+    
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    text-align: center;
+
+}
+
+.copy{
+    bottom: 0px;
+    height: 2%;
+    font-size: x-small;
+}
+
+
+.Layer_1{
+    width: 2%;
+}
+.st0{fill:url(#SVGID_1_);}
+.st1{fill:#FFFFFF;}
+
+hr{
+    background-color: white;
+}

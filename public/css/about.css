@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.about{
+    box-sizing: border-box;
+    width: 100%;
+    background: url('../images/contact/6668.jpg');
+    background-position:center;
+
+    background-size: 80vW;
+    display: flex;
+    justify-content: end;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position-x: left;
+
+}
+.us{
+    border-radius: 20%;
+    background-color: #ffffff;
+    padding: 2%;
+  
+}
+.us h3{
+    margin: 5%;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    width: max-content;
+    padding: 2%;
+
+}
+.us h3:hover{
+    background-color: white;
+    text-decoration: none;
+}
+
+.parrafo{
+    width:50%;
+    margin: 8% 4%;
+    
+   
+}
+p{
+    margin: 5%;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    
+    .about{
+        background-size: 100vW;
+        display: flex;
+        justify-content: end;
+        background-repeat: repeat;
+        height: 650px;
+    }
+    .parrafo{
+        margin: 20% 4%;
+    }
+    .redesociales{
+        margin-top: 8%;
+    }
+    .redesociales  svg{
+        width: 4%;
+    }
+   
+    .Layer_1 {
+        width: 4%;
+  }
+  footer{
+     
+    height: 0;
+    
+}
+}
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+  
+    .about{
+        background-size: 100vW;
+        display: flex;
+        background-repeat: repeat;
+        height: 0px;
+    }
+    .parrafo{
+        margin:auto;
+        font-size: medium;
+    }
+    .footer{
+        margin-top: 5%;
+    }
+    footer{
+     
+        height: 0;
+        
+    }
+  
+  } 

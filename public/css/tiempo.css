@@ -1,0 +1,19 @@
+#WeatherTutiempo{all:initial;*{all:unset;}}
+#WeatherTutiempo{font-family:sans-serif,Arial,Helvetica;font-size:14px;}
+#WeatherTutiempo a{text-decoration:none; color:#0086b3;}
+#WeatherTutiempo a:hover{color:black;}
+#WeatherTutiempo p{margin:0;padding:5px; padding-left:0; padding-right:0;}
+#WeatherTutiempo .header{clear:both;float:none;}
+#WeatherTutiempo .header h2{margin:0;margin-top:10px;}
+#WeatherTutiempo .header p{margin:0;}
+#WeatherTutiempo .date{margin:0;padding-top:10px;padding-bottom:5px;clear:both;float:none;}
+#WeatherTutiempo .daydata{clear:both;float:none;}
+#WeatherTutiempo .it{line-height:25px; float:left; margin-right:20px;height:50px;white-space:nowrap;}
+#WeatherTutiempo .it img{float:left;margin-right:10px;}
+#WeatherTutiempo .wind{float:left; margin-right:20px;line-height:50px;height:50px;white-space:nowrap;}
+#WeatherTutiempo .wind img{float:left;margin-right:10px;}
+#WeatherTutiempo .oc{float:left; margin-right:20px;height:50px;}
+#WeatherTutiempo .moon{line-height:25px;float:left; height:50px;white-space:nowrap;}
+#WeatherTutiempo .moon img{float:left;margin-right:10px;}
+#WeatherTutiempo .time{margin:0; padding:0;clear:both;float:none;padding-top:10px;padding-bottom:5px;}
+#WeatherTutiempo .linkTT{clear: both; float: none;}

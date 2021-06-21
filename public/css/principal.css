@@ -1,0 +1,177 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+.contenedor{
+    margin: 10% auto;
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+
+
+}
+
+.navbar-toggler{
+    background:black;
+}
+.general{
+    margin: 5% 8% ;
+
+}
+
+.seccion1{
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 5%;
+    
+}
+.general> h1{
+    margin: 5% 0 0 0;
+}
+
+.formulario{
+    margin-top:5%;
+
+}
+
+.destacados{
+    padding: 0px;
+    margin: 0px;
+    margin-top:4%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;   
+
+}
+label{
+    width: 60%;
+    text-align: center;
+}
+form{
+    width: 100%;
+}
+
+.form{
+    margin:5% 0%;
+}
+
+.apiTiempo{
+    display: flex;
+    justify-content: end;
+}
+.head{
+    margin-bottom: 10%;
+}
+.row{
+    margin-left: 0px;
+    margin-right: 0px; 
+    width: 100%;
+}
+.row> .filtro > label{
+    width: 100%;
+    text-align: left;
+}
+.selects{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    margin-left: 1%;
+}
+.checks{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 1%;
+    }
+.search{
+    margin-left: 1%;
+}
+
+.volver{
+    margin:0 0 3% 3%;
+}
+.filtrado {
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-between;
+}
+.titulo{
+    margin: 7% 0 0 0;
+}
+.card img{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 200px;
+
+}
+.card{
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 0px;
+}
+.cabecera{
+    background: url('../images/8505.jpg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15%;
+}
+.principal{
+    width: 30%;
+}
+.searchI{
+    background: url('../images/Search.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15%;
+    background-color: aliceblue;
+}
+@media screen and (max-width: 992px) {
+  
+    .apiTiempo{
+        margin: 10% 0%;   
+        border: 1px gray solid;
+        background-color:  #b8e1f1;
+        display: flex;
+        justify-content: center;
+    }
+    .filtrado {
+        display: flex;
+        justify-content: space-around;
+    }
+    .searchI{
+        padding: 50%;
+    }
+    .cardFoto{
+        width: 100%;
+        max-height: 100px;
+    }
+ 
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+   
+    .apiTiempo{
+        margin: 5% 0;  
+        border: 1px gray solid;
+        background-color:  aliceblue;  
+    }
+    .filtrado {
+        display: flex;
+        justify-content: space-around;
+    }
+    .searchI{
+        padding: 50%;
+    }
+    .card{
+        
+    }
+  } 

@@ -1,0 +1,104 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+
+.navbar{
+    box-sizing: border-box;
+    width: 100%;
+}
+.contact{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+.contacto{
+    margin-left: -30%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 1%;
+    z-index: 0;
+    width: 100%;
+    
+
+}
+.contacto img {
+    width: 110%;
+}
+.header {
+    color:   #9edef7;
+    font-size: 22px;
+    
+ }
+
+.form{
+    width:50%;
+    margin:6% 4%;
+    z-index: 1;
+    
+ 
+}
+.formulario{
+    border:1px solid  #9edef7;
+}
+
+.ilustracion{
+    width: 100%;
+    
+}
+.ilustracion >img{
+    width: 100%;
+}
+.btn{
+    background-color: #9edef7;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    
+    .contact{
+        margin: 1%;
+        flex-wrap: wrap-reverse;        
+    }
+    .contacto  {
+        width: 100%;
+        margin: auto;
+    }
+    .contacto img {
+        width: 100%;
+        margin: 5% 0;
+    }
+    footer{
+     
+        height: 30vh;
+        
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+  
+    .contact{
+        margin: 1%;
+        flex-wrap: wrap-reverse;        
+    }
+    .contacto  {
+        width: 100%;
+        margin: auto;
+    }
+    .contacto img {
+        width: 100%;
+    }
+    footer{
+     
+        height: 200px;
+        
+    }
+  } 
